@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Game To Gain</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	
+	<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+	<link rel="stylesheet" href="../static/form.css" th:href="@{/form.css}" />
+	
+</head>
+	<body id="top">	
+	<div class="wrapper row1">
+	  <header id="header" class="hoc clear"> 
+	    <!-- ################################################################################################ -->
+	    <div id="logo" class="fl_left">
+	      <h1 style="color:black"><a >Game To Gain</a></h1>
+	    </div>
+	    <nav id="mainav" class="fl_right">
+	      <ul class="clear">
+	         <li ><a th:href="@{'/home_page/' + ${un}}">Home</a></li>
+       		 <li ><a th:href="@{'/all-courses/' + ${un}}">All Courses</a></li>
+      		 <li ><a th:href="@{/logout}">LogOut</a></li>
+	      </ul>
+	    </nav>
+	    <!-- ################################################################################################ -->
+	  </header>
+	</div>
+	<div class="wrapper bgded overlay" th:style="'background:url(' + @{cover.png} + ')no-repeat fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;'">
+	  <div id="pagetitle" class="hoc clear"> 
+	    
+	  </div>
+	</div>
+	  	
+	  	<h2  class="heading underline btmspace-50">Notifications</h2>
+    
+    <article th:each="currentNotification, stat : ${teacher.notifComment}" class="one_quarter first"><a ></a>
+    
+    	<p th:text ="${currentNotification.commentNotif}"  style="font-size:20px;padding-bottom:50px;color:black;"/>
+      
+      <ul class="meta cat-1">
+       
+       </ul>
+    </article>
+	   
+	  	
+	    <div class="clear"></div>
+	    
+	    
+		
+	  
+	
+	
+	
+	<div class="wrapper row5">
+	  <div id="copyright" class="hoc clear"> 
+	    <!-- ################################################################################################ -->
+	    <p class="fl_left">&copy; 2017 - Game To Gain</p>
+		<!-- ################################################################################################ -->
+	  </div>
+	</div>
+	<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/form.js" th:src="@{/form.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+
+
+</body>
+</html>

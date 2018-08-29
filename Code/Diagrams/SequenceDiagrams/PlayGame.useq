@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.main.model.Student" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Student.java" binary="false" label="student" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="72" y="0"/>    
+    <execution id="2">      
+      <position height="2821" width="76" x="5" y="102"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="com.main.controller.GameController" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/controller/GameController.java" binary="false" label="gameController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="203" y="0"/>    
+    <execution id="4">      
+      <position height="1517" width="112" x="85" y="123"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="1256" width="7" x="138" y="1646"/>    
+    </execution>  
+  </object>  
+  <object id="108" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="71">      
+      <position height="21" width="0" x="0" y="1793"/>    
+    </execution>  
+  </object>  
+  <object id="109" language="java" name="com.main.services.ITeacherServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/ITeacherServices.java" binary="false" label="teacherServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="85">      
+      <position height="21" width="0" x="0" y="2276"/>    
+    </execution>  
+  </object>  
+  <object id="110" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="95">      
+      <position height="21" width="0" x="0" y="2533"/>    
+    </execution>  
+  </object>  
+  <object id="111" language="java" name="org.springframework.web.servlet.ModelAndView" project="GameToGain" 
+    file="C:/Users/User/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar" 
+    binary="true" label="mv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="144"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="855"/>    
+    </execution>    
+    <execution id="39">      
+      <position height="21" width="0" x="0" y="897"/>    
+    </execution>    
+    <execution id="41">      
+      <position height="21" width="0" x="0" y="939"/>    
+    </execution>    
+    <execution id="43">      
+      <position height="21" width="0" x="0" y="981"/>    
+    </execution>    
+    <execution id="45">      
+      <position height="21" width="0" x="0" y="1061"/>    
+    </execution>    
+    <execution id="47">      
+      <position height="21" width="0" x="0" y="1140"/>    
+    </execution>    
+    <execution id="53">      
+      <position height="21" width="0" x="0" y="1313"/>    
+    </execution>    
+    <execution id="55">      
+      <position height="21" width="0" x="0" y="1355"/>    
+    </execution>    
+    <execution id="57">      
+      <position height="21" width="0" x="0" y="1397"/>    
+    </execution>    
+    <execution id="59">      
+      <position height="21" width="0" x="0" y="1439"/>    
+    </execution>    
+    <execution id="61">      
+      <position height="21" width="0" x="0" y="1519"/>    
+    </execution>    
+    <execution id="63">      
+      <position height="21" width="0" x="0" y="1598"/>    
+    </execution>    
+    <execution id="65">      
+      <position height="21" width="0" x="0" y="1667"/>    
+    </execution>    
+    <execution id="81">      
+      <position height="21" width="0" x="0" y="2155"/>    
+    </execution>    
+    <execution id="83">      
+      <position height="21" width="0" x="0" y="2197"/>    
+    </execution>    
+    <execution id="87">      
+      <position height="21" width="0" x="0" y="2318"/>    
+    </execution>    
+    <execution id="89">      
+      <position height="21" width="0" x="0" y="2360"/>    
+    </execution>    
+    <execution id="91">      
+      <position height="21" width="0" x="0" y="2412"/>    
+    </execution>    
+    <execution id="97">      
+      <position height="21" width="0" x="0" y="2575"/>    
+    </execution>    
+    <execution id="99">      
+      <position height="21" width="0" x="0" y="2617"/>    
+    </execution>    
+    <execution id="101">      
+      <position height="21" width="0" x="0" y="2659"/>    
+    </execution>    
+    <execution id="103">      
+      <position height="21" width="0" x="0" y="2701"/>    
+    </execution>    
+    <execution id="105">      
+      <position height="21" width="0" x="0" y="2781"/>    
+    </execution>    
+    <execution id="107">      
+      <position height="21" width="0" x="0" y="2860"/>    
+    </execution>  
+  </object>  
+  <object id="112" language="java" name="com.main.services.IGameServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IGameServices.java" binary="false" label="gameService" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="186"/>    
+    </execution>    
+    <execution id="67">      
+      <position height="21" width="0" x="0" y="1709"/>    
+    </execution>  
+  </object>  
+  <object id="113" language="java" name="com.main.model.Achievement" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Achievement.java" binary="false" label="achievement" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="266"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="509"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="551"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="635"/>    
+    </execution>  
+  </object>  
+  <object id="114" language="java" name="com.main.services.IAchievementServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IAchievementServices.java" binary="false" 
+    label="achievementServices" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="346"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="388"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="719"/>    
+    </execution>    
+    <execution id="73">      
+      <position height="21" width="0" x="0" y="1901"/>    
+    </execution>    
+    <execution id="75">      
+      <position height="21" width="0" x="0" y="2029"/>    
+    </execution>    
+    <execution id="77">      
+      <position height="21" width="0" x="0" y="2071"/>    
+    </execution>  
+  </object>  
+  <object id="115" language="java" name="com.main.services.IStudentServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IStudentServices.java" binary="false" label="studentServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="467"/>    
+    </execution>    
+    <execution id="79">      
+      <position height="21" width="0" x="0" y="2113"/>    
+    </execution>  
+  </object>  
+  <object id="116" language="java" name="com.main.model.Game" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Game.java" binary="false" label="game" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="593"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="677"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="771"/>    
+    </execution>    
+    <execution id="49">      
+      <position height="21" width="0" x="0" y="1229"/>    
+    </execution>    
+    <execution id="69">      
+      <position height="21" width="0" x="0" y="1751"/>    
+    </execution>    
+    <execution id="93">      
+      <position height="21" width="0" x="0" y="2491"/>    
+    </execution>  
+  </object>  
+  <object id="117" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="813"/>    
+    </execution>  
+  </object>  
+  <object id="118" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="51">      
+      <position height="21" width="0" x="0" y="1271"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="119" interaction-operator="ALT">    
+    <interaction-operand id="120" constraint="studentServices.studentIsExist(username)">      
+      <fragment refId="40"/>      
+      <fragment refId="36"/>      
+      <fragment refId="42"/>      
+      <fragment refId="12"/>      
+      <fragment refId="32"/>      
+      <fragment refId="121"/>      
+      <fragment refId="38"/>      
+      <fragment refId="122"/>      
+      <fragment refId="34"/>    
+    </interaction-operand>    
+    <interaction-operand id="123" constraint="else">      
+      <fragment refId="54"/>      
+      <fragment refId="48"/>      
+      <fragment refId="124"/>      
+      <fragment refId="58"/>      
+      <fragment refId="56"/>      
+      <fragment refId="50"/>      
+      <fragment refId="52"/>    
+    </interaction-operand>    
+    <combined-fragment id="121" interaction-operator="ALT">      
+      <interaction-operand id="125" constraint="achievementServices.isExist( username,gameid)">        
+        <fragment refId="16"/>        
+        <fragment refId="14"/>      
+      </interaction-operand>      
+      <interaction-operand id="126" constraint="else">        
+        <fragment refId="22"/>        
+        <fragment refId="30"/>        
+        <fragment refId="18"/>        
+        <fragment refId="20"/>        
+        <fragment refId="26"/>        
+        <fragment refId="28"/>        
+        <fragment refId="24"/>      
+      </interaction-operand>    
+    </combined-fragment>    
+    <combined-fragment id="122" interaction-operator="ALT">      
+      <interaction-operand id="127" constraint="game.getType().equals(&quot;MultipleChoice&quot;)">        
+        <fragment refId="44"/>      
+      </interaction-operand>      
+      <interaction-operand id="128" constraint="else">        
+        <fragment refId="46"/>      
+      </interaction-operand>    
+    </combined-fragment>    
+    <combined-fragment id="124" interaction-operator="ALT">      
+      <interaction-operand id="129" constraint="game.getType().equals(&quot;MultipleChoice&quot;)">        
+        <fragment refId="60"/>      
+      </interaction-operand>      
+      <interaction-operand id="130" constraint="else">        
+        <fragment refId="62"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="131" interaction-operator="OPT">    
+    <interaction-operand id="132" constraint="studentServices.studentIsExist(username)">      
+      <fragment refId="133"/>    
+    </interaction-operand>    
+    <combined-fragment id="133" interaction-operator="OPT">      
+      <interaction-operand id="134" constraint="q.getAnswer().equals(qq.getCuurentAnswer())">        
+        <fragment refId="72"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="135" interaction-operator="ALT">    
+    <interaction-operand id="136" constraint="count==game.getQuestions().size()">      
+      <fragment refId="137"/>      
+      <fragment refId="90"/>    
+    </interaction-operand>    
+    <interaction-operand id="138" constraint="else">      
+      <fragment refId="96"/>      
+      <fragment refId="94"/>      
+      <fragment refId="92"/>      
+      <fragment refId="98"/>      
+      <fragment refId="139"/>      
+      <fragment refId="100"/>      
+      <fragment refId="102"/>    
+    </interaction-operand>    
+    <combined-fragment id="137" interaction-operator="ALT">      
+      <interaction-operand id="140" constraint="studentServices.studentIsExist(username)">        
+        <fragment refId="74"/>        
+        <fragment refId="82"/>        
+        <fragment refId="80"/>        
+        <fragment refId="76"/>        
+        <fragment refId="78"/>      
+      </interaction-operand>      
+      <interaction-operand id="141" constraint="else">        
+        <fragment refId="88"/>        
+        <fragment refId="86"/>        
+        <fragment refId="84"/>      
+      </interaction-operand>    
+    </combined-fragment>    
+    <combined-fragment id="139" interaction-operator="ALT">      
+      <interaction-operand id="142" constraint="game.getType().equals(&quot;MultipleChoice&quot;)">        
+        <fragment refId="104"/>      
+      </interaction-operand>      
+      <interaction-operand id="143" constraint="else">        
+        <fragment refId="106"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" 
+    operation="StartGame(com.main.model.Question,java.lang.String,java.lang.Long):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" 
+    operation="CheckAnswer(com.main.model.Question,java.lang.String,java.lang.Long,int):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="findById(java.lang.Long):com.main.model.Game" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="Achievement()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="find(java.lang.String,java.lang.Long):com.main.model.Achievement" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="resetLastScore(com.main.model.Achievement):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="findByUsername(java.lang.String):com.main.model.Student" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="setStudent(com.main.model.Student):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="setGameId(java.lang.Long):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="getId():long" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="setGameName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="getName():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="saveAchievement(com.main.model.Achievement):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="getQuestions():java.util.List&lt;Question&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="get(int):E" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="40" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="41"/>  
+  </message>  
+  <message id="42" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="43"/>  
+  </message>  
+  <message id="44" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="45"/>  
+  </message>  
+  <message id="46" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="47"/>  
+  </message>  
+  <message id="48" operation="getQuestions():java.util.List&lt;Question&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="49"/>  
+  </message>  
+  <message id="50" operation="get(int):E" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="51"/>  
+  </message>  
+  <message id="52" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="53"/>  
+  </message>  
+  <message id="54" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="55"/>  
+  </message>  
+  <message id="56" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="57"/>  
+  </message>  
+  <message id="58" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="59"/>  
+  </message>  
+  <message id="60" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="61"/>  
+  </message>  
+  <message id="62" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="63"/>  
+  </message>  
+  <message id="64" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="65"/>  
+  </message>  
+  <message id="66" operation="findById(java.lang.Long):com.main.model.Game" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="67"/>  
+  </message>  
+  <message id="68" operation="getQuestions():java.util.List&lt;Question&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="69"/>  
+  </message>  
+  <message id="70" operation="get(int):E" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="71"/>  
+  </message>  
+  <message id="72" operation="updateScore(java.lang.String,java.lang.Long,int):com.main.model.Achievement" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="73"/>  
+  </message>  
+  <message id="74" operation="saveAchievement(com.main.model.Achievement):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="75"/>  
+  </message>  
+  <message id="76" operation="updateMax(java.lang.String,java.lang.Long):com.main.model.Achievement" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="77"/>  
+  </message>  
+  <message id="78" operation="findByUsername(java.lang.String):com.main.model.Student" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="79"/>  
+  </message>  
+  <message id="80" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="81"/>  
+  </message>  
+  <message id="82" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="83"/>  
+  </message>  
+  <message id="84" operation="findByUsername(java.lang.String):com.main.model.Teacher" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="85"/>  
+  </message>  
+  <message id="86" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="87"/>  
+  </message>  
+  <message id="88" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="89"/>  
+  </message>  
+  <message id="90" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="91"/>  
+  </message>  
+  <message id="92" operation="getQuestions():java.util.List&lt;Question&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="93"/>  
+  </message>  
+  <message id="94" operation="get(int):E" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="95"/>  
+  </message>  
+  <message id="96" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="97"/>  
+  </message>  
+  <message id="98" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="99"/>  
+  </message>  
+  <message id="100" 
+    operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="101"/>  
+  </message>  
+  <message id="102" 
+    operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="103"/>  
+  </message>  
+  <message id="104" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="105"/>  
+  </message>  
+  <message id="106" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="107"/>  
+  </message>
+</sequence-diagram>

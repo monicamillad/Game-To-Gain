@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Courses | Game To Gain</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="teacher_home.html">Game To Gain</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li><a href="teacher_home.html">Home</a></li>
+        <li><a class="drop" href="teacher_courses.html">My Courses</a>
+          <ul>
+            <li><a href="courses.html">Mathematics</a></li>
+            <li><a href="courses.html">Science</a></li>
+            <li><a href="courses.html">Programming</a></li>
+            <li><a href="courses.html">History</a></li>
+          </ul>
+        </li>
+		<li><a href="index.html">LogOut</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<div class="wrapper bgded overlay" th:style="'background:url(' + @{cover.png} + ')no-repeat fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;'">
+  <div id="pagetitle" class="hoc clear"> 
+    <h2>Courses</h2>
+  </div>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <div id="gallery">
+	        <figure>
+	          <ul class="nospace clear">
+	            <li class="one_quarter first"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            <li class="one_quarter"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            <li class="one_quarter"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            <li class="one_quarter"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            <li class="one_quarter first"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            <li class="one_quarter"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            <li class="one_quarter"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            <li class="one_quarter"><a href="#">Course Name<img src="../static/course.png" th:src="@{/course.png}" alt=""/></a></li>
+	            </ul>
+	        </figure>
+	      </div>
+	  </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">&copy; 2017 - Game To Gain</p>
+	<!-- ################################################################################################ -->
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+
+
+</body>
+</html>

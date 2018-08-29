@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Game To Gain</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a>Game To Gain</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li class="active"><a th:href="@{'/home_page/' + ${un}}">Home</a></li>
+        <li ><a th:href="@{'/all-courses/' + ${un}}">All Courses</a></li>
+        <li ><a th:href="@{/logout}">LogOut</a></li>
+       <li>  <a th:href="@{'/show_student_notification/'+${un}}"><span th:text="ShowNotification"></span></a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<div class="wrapper bgded overlay" th:style="'background:url(' + @{s.png} + ')no-repeat fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;'" >
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h2 class="heading center">Play and Learn</h2>
+      <p>play educational games and gain more experience in many available courses </p>
+      <footer><a class="btn" th:href="@{'/all-courses/' + ${un}}">Go to Courses</a></footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<div class="wrapper row3">
+  <div id="introblocks" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace clear">
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'Mathematics'}" ><i class="clg clg-planet-earth5"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'Mathematics'}">Mathematics</a></h4>
+          <p>Justo hendrerit suspendisse non justo tempor porttitor urna ac fringilla orci&hellip;</p>
+        </article>
+      </li>
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'History'}"><i class="clg clg-monument26"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'History'}">History</a></h4>
+          <p>Interdum sit elementum at amet diam sed non convallis vitae nec habitant&hellip;</p>
+        </article>
+      </li>
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'Science'}"><i class="clg clg-microscopes2"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'Science'}">Science</a></h4>
+          <p>Commodo quis maecenas in enim ac elit tempor vehicula pellentesque a libero&hellip;</p>
+        </article>
+      </li>
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'Programming'}"><i class="clg clg-university23"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'Programming'}">Programming</a></h4>
+          <p>Rhoncus iaculis ligula vel lobortis nullam malesuada mi odio vitae consequat&hellip;</p>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+
+<div class="wrapper row3">
+  <div id="featured" class="hoc container clear"> 
+    <h2  class="heading underline btmspace-50">My Courses</h2>
+    
+    <article th:each="currentCourse, stat : ${student.courses1}" class="one_quarter first"><a ><img src="../static/course.png" th:src="@{/course.png}" alt=""/></a>
+     <!--   <form th:action="@{display_course}"  th:object="${course}" method="post">
+      <h4  class="heading font-x1"><a  href="courses"></a></h4>
+       <input type="hidden" th:field="${currentCourse}"/>
+      <button type="submit"><p th:text="${currentCourse.getName()}"/></button>
+      </form>-->
+      <a th:href="@{'/display_course/'+${un} +'/'+ ${currentCourse.Courseid}}"><span th:text="${currentCourse.getName()}"></span></a>
+      <ul class="meta cat-1">
+        <li><i  class="fa fa-tag"></i> <a th:text="${currentCourse.getCategory()}" ></a></li>
+        <li><i  class="fa fa-users"></i> Lower Age: <strong th:text="${currentCourse.getLowerAge()}"></strong></li>
+       </ul>
+    </article>
+   
+   <div class="clear"></div>
+  </div>
+</div>
+<div class="wrapper row3">
+  <div id="featured" class="hoc container clear"> 
+    <h2  class="heading underline btmspace-50">My Achievements</h2>
+    
+    <article th:each="currentAchievement, stat : ${student.achievements}" class="one_quarter first">
+   <!--  <form action="display_course" method="post">
+      <h4  class="heading font-x1"><a  href="games"></a></h4>
+       <input type="hidden"/>
+      <button formaction="display_game"><p th:text="${currentGame.getName()}"/></button>
+      </form> -->  
+      <a th:href="@{'/display_game/'+${un} +'/'+ ${currentAchievement.gameId}}"><span th:text="${currentAchievement.gameName}"></span></a>
+      
+      <ul class="meta cat-1">
+        <li><i  class="fa fa-tag"></i> <a th:text="'Last Score: ' + ${currentAchievement.lastScore}" ></a></li>
+        <li><i  class="fa fa-users"></i> <strong th:text="'Maximum Score: ' + ${currentAchievement.maxScore}"></strong></li>
+       </ul>
+    </article>
+   
+  
+   
+   <div class="clear"></div>
+  </div>
+</div>
+
+
+
+
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">&copy; 2017 - Game To Gain</p>
+	<!-- ################################################################################################ -->
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+
+</body>
+</html>

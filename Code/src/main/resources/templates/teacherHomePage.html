@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<title>Sign Up</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form th:action="create_course" th:object="${teacher}"  method="post">
+
+<p th:text ="'userName: ' + ${teacher.username}"  th:fild="${teacher.username}"/>
+<br/>
+<p th:text ="'password: ' + ${teacher.password}"/>
+<br/>
+
+<p th:text ="'email: ' + ${teacher.email}"/>
+<br/>
+
+<!--  <p th:text ="'course: ' + ${user.courses.get(0)}"/>-->
+<br/>
+
+<table class="table table-bordered table-hover table-striped">
+         <tbody>
+            <tr th:each="currentCourse, stat : ${teacher.courses}">
+               <td th:text="${currentCourse.getName()}"></td>
+               <td th:text="${currentCourse.getCategory()}"></td>
+               <td th:text="${currentCourse.getDescription()}"></td>
+               <td th:text="${currentCourse.getLowerAge()}"></td>
+            </tr>
+         </tbody>
+      </table>
+
+
+<input type="submit" value="Create Course"/>
+
+</form>
+
+</body>
+
+</html>

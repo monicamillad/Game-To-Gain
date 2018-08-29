@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Game Name | Game To Gain</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	
+	<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+	
+</head>
+	<body id="top">	
+	<div class="wrapper row1">
+	  <header id="header" class="hoc clear"> 
+	    <!-- ################################################################################################ -->
+	    <div id="logo" class="fl_left">
+	      <h1><a>Game To Gain</a></h1>
+	    </div>
+	    <nav id="mainav" class="fl_right">
+	      <ul class="clear">
+	        <li ><a th:href="@{'/home_page/' + ${un}}">Home</a></li>
+       		<li ><a th:href="@{'/all-courses/' + ${un}}">All Courses</a></li>
+      		<li ><a th:href="@{/logout}">LogOut</a></li>
+	      </ul>
+	    </nav>
+	    <!-- ################################################################################################ -->
+	  </header>
+	</div>
+	
+			
+	<form th:action="@{'/add_new_question/' + ${un} + '/' + ${game.id}}" method="post">
+	
+	<div class="wrapper row3" style="background-color:#ffffff;">
+  <div id="featured" class="hoc container clear"> 
+    <h2  class="heading underline btmspace-50">My Questions</h2>
+    
+    <article th:each="currentQuestion, stat : ${game.questions}" class="one_quarter first"><a ></a>
+    
+    	<p style="font-size:20px;padding-bottom:50px;color:black;">Question:</p>
+    	<p th:text ="${currentQuestion.q}"  style="font-size:20px;padding-bottom:50px;color:black;"/>
+    	
+    	<p style="font-size:20px;padding-bottom:50px;color:black;">Choices:</p>
+    	<p th:text ="${currentQuestion.c1}"  style="font-size:20px;padding-bottom:50px;color:black;"/>
+    	<p th:text ="${currentQuestion.c1}"  style="font-size:20px;padding-bottom:50px;color:black;"/>
+    	<p th:text ="${currentQuestion.c1}"  style="font-size:20px;padding-bottom:50px;color:black;"/>
+    	<p th:text ="${currentQuestion.c1}"  style="font-size:20px;padding-bottom:50px;color:black;"/>
+    	
+    	<p style="font-size:20px;padding-bottom:50px;color:black;">Correct Answer:</p>
+    	<p th:text ="${currentQuestion.answer}"  style="font-size:20px;padding-bottom:50px;color:black;"/>
+    
+      <br></br>
+       <a th:href="@{'/delete_question/'+${un}+'/' + ${game.id}+'/'+${currentQuestion.qid}}" ><span th:text="DeleteQuestion"></span></a>
+      
+      <ul class="meta cat-1">
+       
+       </ul>
+    </article>
+    
+	<div class="clear"></div>
+	
+	<footer style="padding-bottom:30px"><button style="margin:auto; background-color: Transparent; cursor:pointer;" type="submit" class="button button-block">Add Question</button></footer>
+	
+  </div>
+</div>
+
+	</form>
+	
+	<div class="wrapper row5">
+	  <div id="copyright" class="hoc clear"> 
+	    <!-- ################################################################################################ -->
+	    <p class="fl_left">&copy; 2017 - Game To Gain</p>
+		<!-- ################################################################################################ -->
+	  </div>
+	</div>
+	<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+	
+
+</body>
+</html>

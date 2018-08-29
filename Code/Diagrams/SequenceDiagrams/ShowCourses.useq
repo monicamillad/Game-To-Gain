@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.main.model.User" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/User.java" binary="false" label="user" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="43" y="0"/>    
+    <execution id="2">      
+      <position height="273" width="76" x="5" y="108"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.main.controller.CourseController" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/controller/CourseController.java" binary="false" label="courseController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="207" y="0"/>    
+    <execution id="4">      
+      <position height="231" width="120" x="85" y="129"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="com.main.services.ICourseServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/ICourseServices.java" binary="false" label="services" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="150"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="org.springframework.web.servlet.ModelAndView" project="GameToGain" 
+    file="C:/Users/User/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar" 
+    binary="true" label="mv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="192"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="234"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="276"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="318"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="AllCourses(java.lang.String):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="getAll():java.util.ArrayList&lt;Course&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>
+</sequence-diagram>

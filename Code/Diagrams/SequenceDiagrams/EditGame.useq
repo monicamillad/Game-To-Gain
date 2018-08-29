@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.main.model.Teacher" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Teacher.java" binary="false" label="teacher" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="67" y="0"/>    
+    <execution id="2">      
+      <position height="1350" width="76" x="5" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.main.controller.GameController" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/controller/GameController.java" binary="false" label="gameController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="231" y="0"/>    
+    <execution id="4">      
+      <position height="189" width="112" x="85" y="120"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="273" width="7" x="138" y="292"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="390" width="7" x="141" y="558"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="483" width="7" x="144" y="945"/>    
+    </execution>  
+  </object>  
+  <object id="68" language="java" name="com.main.model.Game" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Game.java" binary="false" label="g" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="51">      
+      <position height="21" width="0" x="0" y="1050"/>    
+    </execution>    
+    <execution id="55">      
+      <position height="21" width="0" x="0" y="1134"/>    
+    </execution>  
+  </object>  
+  <object id="69" language="java" name="com.main.model.Game" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Game.java" binary="false" label="game" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="53">      
+      <position height="21" width="0" x="0" y="1092"/>    
+    </execution>    
+    <execution id="57">      
+      <position height="21" width="0" x="0" y="1176"/>    
+    </execution>  
+  </object>  
+  <object id="70" language="java" name="com.main.services.IGameServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IGameServices.java" binary="false" label="gameService" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="355"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="621"/>    
+    </execution>    
+    <execution id="49">      
+      <position height="21" width="0" x="0" y="1008"/>    
+    </execution>    
+    <execution id="59">      
+      <position height="21" width="0" x="0" y="1218"/>    
+    </execution>  
+  </object>  
+  <object id="71" language="java" name="org.springframework.web.servlet.ModelAndView" project="GameToGain" 
+    file="C:/Users/User/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar" 
+    binary="true" label="mv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="141"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="183"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="225"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="267"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="313"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="397"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="439"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="481"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="523"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="579"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="663"/>    
+    </execution>    
+    <execution id="39">      
+      <position height="21" width="0" x="0" y="705"/>    
+    </execution>    
+    <execution id="41">      
+      <position height="21" width="0" x="0" y="747"/>    
+    </execution>    
+    <execution id="43">      
+      <position height="21" width="0" x="0" y="827"/>    
+    </execution>    
+    <execution id="45">      
+      <position height="21" width="0" x="0" y="906"/>    
+    </execution>    
+    <execution id="47">      
+      <position height="21" width="0" x="0" y="966"/>    
+    </execution>    
+    <execution id="61">      
+      <position height="21" width="0" x="0" y="1260"/>    
+    </execution>    
+    <execution id="63">      
+      <position height="21" width="0" x="0" y="1302"/>    
+    </execution>    
+    <execution id="65">      
+      <position height="21" width="0" x="0" y="1344"/>    
+    </execution>    
+    <execution id="67">      
+      <position height="21" width="0" x="0" y="1386"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="72" interaction-operator="ALT">    
+    <interaction-operand id="73" constraint="g.getType().equals(&quot;MultipleChoice&quot;)">      
+      <fragment refId="42"/>    
+    </interaction-operand>    
+    <interaction-operand id="74" constraint="else">      
+      <fragment refId="44"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" 
+    operation="EditGame(com.main.model.Game,java.lang.String,java.lang.Long):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="EditGameInfo(java.lang.String,java.lang.Long):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" 
+    operation="EditGameQuestions(java.lang.String,java.lang.Long):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" 
+    operation="SaveEditing(com.main.model.Game,java.lang.String,java.lang.Long):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="findById(java.lang.Long):com.main.model.Game" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="findById(java.lang.Long):com.main.model.Game" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="40" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="41"/>  
+  </message>  
+  <message id="42" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="43"/>  
+  </message>  
+  <message id="44" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="45"/>  
+  </message>  
+  <message id="46" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="47"/>  
+  </message>  
+  <message id="48" operation="findById(java.lang.Long):com.main.model.Game" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="49"/>  
+  </message>  
+  <message id="50" operation="setName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="51"/>  
+  </message>  
+  <message id="52" operation="getName():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="53"/>  
+  </message>  
+  <message id="54" operation="setDescription(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="55"/>  
+  </message>  
+  <message id="56" operation="getDescription():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="57"/>  
+  </message>  
+  <message id="58" operation="saveGame(com.main.model.Game):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="59"/>  
+  </message>  
+  <message id="60" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="61"/>  
+  </message>  
+  <message id="62" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="63"/>  
+  </message>  
+  <message id="64" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="65"/>  
+  </message>  
+  <message id="66" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="67"/>  
+  </message>
+</sequence-diagram>

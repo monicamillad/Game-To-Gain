@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.main.model.Student" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Student.java" binary="false" label="student" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="103" y="0"/>    
+    <execution id="2">      
+      <position height="483" width="76" x="5" y="104"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="0" x="0" y="230"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="314"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="com.main.controller.NotificationController" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/controller/NotificationController.java" binary="false" 
+    label="notificationController" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="211" y="0"/>    
+    <execution id="4">      
+      <position height="441" width="143" x="85" y="125"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="org.springframework.web.servlet.ModelAndView" project="GameToGain" 
+    file="C:/Users/User/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar" 
+    binary="true" label="mv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="146"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="440"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="482"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="524"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="com.main.services.IStudentServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IStudentServices.java" binary="false" label="studentServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="188"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="java.io.PrintStream" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="272"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="356"/>    
+    </execution>  
+  </object>  
+  <object id="30" language="java" name="java.io.PrintStream" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="398"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="StudentNotification(com.main.model.Student,java.lang.String):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="8" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="findByUsername(java.lang.String):com.main.model.Student" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="getUsername():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="13" operation="println(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="getNotifGame():java.util.List&lt;GameNotification&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="16" operation="size():int" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="println(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>
+</sequence-diagram>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.main.model.User" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/User.java" binary="false" label="user" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="99" y="0"/>    
+    <execution id="2">      
+      <position height="630" width="76" x="5" y="108"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.main.controller.GameController" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/controller/GameController.java" binary="false" label="gameController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="212" y="0"/>    
+    <execution id="4">      
+      <position height="588" width="112" x="85" y="129"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="675"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="org.springframework.web.servlet.ModelAndView" project="GameToGain" 
+    file="C:/Users/User/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar" 
+    binary="true" label="mv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="150"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="528"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="570"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="612"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="com.main.services.IGameServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IGameServices.java" binary="false" label="gameService" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="192"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="com.main.model.Comment" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Comment.java" binary="false" label="comment" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="234"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="276"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="360"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="486"/>    
+    </execution>  
+  </object>  
+  <object id="35" language="java" name="com.main.model.Game" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Game.java" binary="false" label="game" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="318"/>    
+    </execution>  
+  </object>  
+  <object id="36" language="java" name="com.main.services.ICommentServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/ICommentServices.java" binary="false" label="commentServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="402"/>    
+    </execution>  
+  </object>  
+  <object id="37" language="java" name="com.main.services.IGameNotification" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IGameNotification.java" binary="false" label="commentNotification" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="444"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="AddComment(com.main.model.Game,java.lang.String,java.lang.Long):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="findById(java.lang.Long):com.main.model.Game" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="Comment()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="setContent(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="getLastComment():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="setGame1(com.main.model.Game):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="saveComment(com.main.model.Comment):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="notifyComment(com.main.model.Game,java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="getContent():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" 
+    operation="ViewGame(com.main.model.Game,java.lang.String):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>
+</sequence-diagram>

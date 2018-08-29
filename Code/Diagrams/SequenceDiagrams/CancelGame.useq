@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.main.model.Teacher" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Teacher.java" binary="false" label="teacher" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="125" y="0"/>    
+    <execution id="2">      
+      <position height="861" width="76" x="5" y="105"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.main.controller.GameController" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/controller/GameController.java" binary="false" label="gameController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="226" y="0"/>    
+    <execution id="4">      
+      <position height="819" width="112" x="85" y="126"/>    
+    </execution>  
+  </object>  
+  <object id="44" language="java" name="org.springframework.web.servlet.ModelAndView" project="GameToGain" 
+    file="C:/Users/User/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar" 
+    binary="true" label="mv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="147"/>    
+    </execution>    
+    <execution id="39">      
+      <position height="21" width="0" x="0" y="819"/>    
+    </execution>    
+    <execution id="41">      
+      <position height="21" width="0" x="0" y="861"/>    
+    </execution>    
+    <execution id="43">      
+      <position height="21" width="0" x="0" y="903"/>    
+    </execution>  
+  </object>  
+  <object id="45" language="java" name="com.main.services.ITeacherServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/ITeacherServices.java" binary="false" label="teacherServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="189"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="735"/>    
+    </execution>  
+  </object>  
+  <object id="46" language="java" name="com.main.services.IGameServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IGameServices.java" binary="false" label="gameService" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="231"/>    
+    </execution>  
+  </object>  
+  <object id="47" language="java" name="com.main.model.Game" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Game.java" binary="false" label="g" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="273"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="315"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="399"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="441"/>    
+    </execution>  
+  </object>  
+  <object id="48" language="java" name="com.main.model.Course" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Course.java" binary="false" label="c" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="357"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="483"/>    
+    </execution>  
+  </object>  
+  <object id="49" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="525"/>    
+    </execution>  
+  </object>  
+  <object id="50" language="java" name="com.main.model.Teacher" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Teacher.java" binary="false" label="t" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="567"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="651"/>    
+    </execution>  
+  </object>  
+  <object id="51" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="609"/>    
+    </execution>  
+  </object>  
+  <object id="52" language="java" name="java.util.List" project="GameToGain" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="693"/>    
+    </execution>  
+  </object>  
+  <object id="53" language="java" name="com.main.services.ICourseServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/ICourseServices.java" binary="false" label="courseServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="777"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="CancelGame(java.lang.String,java.lang.Long):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="findByUsername(java.lang.String):com.main.model.Teacher" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="findById(java.lang.Long):com.main.model.Game" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="getCourse():com.main.model.Course" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="setcId(long):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="getCourseid():java.lang.Long" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="setCancelled(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="setCourse(com.main.model.Course):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="getGames():java.util.List&lt;Game&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="remove(java.lang.Object):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="getGames():java.util.List&lt;Game&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="remove(java.lang.Object):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="getCancelled():java.util.List&lt;Game&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="add(E):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="saveTeacher(com.main.model.Teacher):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="saveCourse(com.main.model.Course):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="40" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="41"/>  
+  </message>  
+  <message id="42" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="43"/>  
+  </message>
+</sequence-diagram>

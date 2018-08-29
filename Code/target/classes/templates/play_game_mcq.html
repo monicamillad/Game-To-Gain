@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Game Name | Game To Gain</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	
+	<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+	
+</head>
+	<body id="top">	
+	<div class="wrapper row1">
+	  <header id="header" class="hoc clear"> 
+	    <!-- ################################################################################################ -->
+	    <div id="logo" class="fl_left">
+	      <h1><a>Game To Gain</a></h1>
+	    </div>
+	    <nav id="mainav" class="fl_right">
+	      <ul class="clear">
+	        <li ><a th:href="@{'/home_page/' + ${un}}">Home</a></li>
+       		<li ><a th:href="@{'/all-courses/' + ${un}}">All Courses</a></li>
+      		<li ><a th:href="@{/logout}">LogOut</a></li>
+	      </ul>
+	    </nav>
+	    <!-- ################################################################################################ -->
+	  </header>
+	</div>
+	
+	
+<form th:action="@{'/check_answer/' + ${un} + '/' + ${game.id} +'/'+${count}}" method="post">
+	
+	<div class="wrapper row3" th:style="'background:url(' + @{back.png} + ')no-repeat fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;'">
+	  <div class="hoc container clear" > 
+	  
+	    <div class="content"> 
+	    		<div class="center">
+	    			 <p th:text ="${game.name}"  style="font-size:50px;padding-bottom:50px;color:black;"/> 
+					
+					<p th:text ="${question.q}"  style="font-size:50px;padding-bottom:50px;color:black;"/>
+			      
+					<label th:text ="${question.c1}" style="font-size:20px;color:black;padding-top:30px;"></label>
+					<input type="radio" th:field="${question.cuurentAnswer}" checked="checked" name='r' th:value="${question.c1}" style="margin:0 auto; width:30%;"/>
+					
+					<label th:text ="${question.c2}" style="font-size:20px;color:black;padding-top:30px;"> </label>
+					<input type="radio" th:field="${question.cuurentAnswer}" name='r' th:value="${question.c2}" style="margin:0 auto; width:30%;"/>
+					
+					<label th:text ="${question.c3}" style="font-size:20px;color:black;padding-top:30px;"></label>
+					<input type="radio" th:field="${question.cuurentAnswer}" name='r' th:value="${question.c3}" style="margin:0 auto; width:30%;"/>
+					
+					<label th:text ="${question.c4}" style="font-size:20px;color:black;padding-top:30px;"></label>
+					<input type="radio" th:field="${question.cuurentAnswer}" name='r' th:value="${question.c4}" style="margin:0 auto; width:30%;"/>
+					
+				</div>
+		</div>
+		  
+	    <div class="clear"></div>
+		
+	  </div>
+	  <div class="wrapper row2">
+	  		<div class="heading center">
+				
+                    
+				<footer style="padding-bottom:30px"><button style="margin:auto; background-color: Transparent; cursor:pointer;" type="submit" class="button button-block">Submit -> Next</button></footer>
+				</div>
+			</div>
+	</div>
+			</form>
+	
+	
+	<div class="wrapper row5">
+	  <div id="copyright" class="hoc clear"> 
+	    <!-- ################################################################################################ -->
+	    <p class="fl_left">&copy; 2017 - Game To Gain</p>
+		<!-- ################################################################################################ -->
+	  </div>
+	</div>
+	<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+	
+
+</body>
+</html>

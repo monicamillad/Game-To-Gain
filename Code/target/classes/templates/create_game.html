@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Game To Gain</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	
+	<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+	<link rel="stylesheet" href="../static/form.css" th:href="@{/form.css}" />
+	
+
+</head>	
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1 style="color:black"><a>Game To Gain</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li ><a th:href="@{'/home_page/' + ${un}}">Home</a></li>
+        <li ><a th:href="@{'/all-courses/' + ${un}}">All Courses</a></li>
+        <li ><a th:href="@{/logout}">LogOut</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+
+<div class="wrapper bgded overlay" th:style="'background:url(' + @{teacher.png} + ')no-repeat fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;'" >
+  <div id="pageintro" class="hoc clear" >
+  <div class="form">
+  
+					
+					<form th:action="@{'/create_question/'+${un}+'/'+${cid}}" th:object="${game}" method="post">
+							<div class="field-wrap">
+								<label> Game Name<span class="req">*</span></label> 
+								<input type="text" required="required" th:field="${game.name}"/>
+							</div>
+							<div class="field-wrap">
+								<label> Game Description<span class="req">*</span></label> 
+								<input type="text" required="required" th:field="${game.description}"/>
+							</div>
+							
+							
+							<div class="field-wrap">
+								<select th:field="${game.type}" style="color: rgba(255, 255, 255, 0.5); left: 10px; font-size:20px; background-color:transparent; width:100%; height: 38px;">				
+									<option th:value="MultipleChoice" style="color:black">Multiple Choice</option>
+									<option th:value="TrueFalse" style="color:black">True and False</option>
+								</select>
+							</div>
+
+							<!--<button formaction="add_question" class="button button-block">Add Questions</button>  -->
+							<div class="field-wrap">
+							<button type="submit" id="CreateGame" class="button button-block">Create Game</button>
+							</div>
+						</form>
+					
+					</div>
+					</div>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">&copy; 2017 - Game To Gain</p>
+	<!-- ################################################################################################ -->
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+	
+	
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type="text/javascript" src="../static/form.js" th:src="@{/form.js}"></script>
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+
+</body>
+</html>

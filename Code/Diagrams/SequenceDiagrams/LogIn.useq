@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.main.model.User" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/User.java" binary="false" label="user" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="124" y="0"/>    
+    <execution id="2">      
+      <position height="1095" width="76" x="5" y="133"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="0" x="0" y="259"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.main.controller.LoginController" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/controller/LoginController.java" binary="false" label="loginController1" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="1053" width="0" x="0" y="154"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="816" width="0" x="0" y="370"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="666"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="999"/>    
+    </execution>  
+  </object>  
+  <object id="42" language="java" name="com.main.model.Student" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Student.java" binary="false" label="s" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="481"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="697"/>    
+    </execution>  
+  </object>  
+  <object id="43" language="java" name="com.main.services.IStudentServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/IStudentServices.java" binary="false" label="studentServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="523"/>    
+    </execution>  
+  </object>  
+  <object id="44" language="java" name="com.main.model.User" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/User.java" binary="false" label="u" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="565"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="898"/>    
+    </execution>  
+  </object>  
+  <object id="45" language="java" name="com.main.model.Teacher" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/model/Teacher.java" binary="false" label="teacher" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="814"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="1030"/>    
+    </execution>  
+  </object>  
+  <object id="46" language="java" name="com.main.services.ITeacherServices" project="GameToGain" 
+    file="/GameToGain/src/main/java/com/main/services/ITeacherServices.java" binary="false" label="teacherServices" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="856"/>    
+    </execution>  
+  </object>  
+  <object id="47" language="java" name="org.springframework.web.servlet.ModelAndView" project="GameToGain" 
+    file="C:/Users/User/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar" 
+    binary="true" label="mv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="175"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="217"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="301"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="401"/>    
+    </execution>    
+    <execution id="39">      
+      <position height="21" width="0" x="0" y="1102"/>    
+    </execution>    
+    <execution id="41">      
+      <position height="21" width="0" x="0" y="1144"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="48" interaction-operator="ALT">    
+    <interaction-operand id="49" constraint="studentServices.studentIsExist(u.getUsername())">      
+      <fragment refId="22"/>      
+      <fragment refId="50"/>      
+      <fragment refId="20"/>      
+      <fragment refId="18"/>    
+    </interaction-operand>    
+    <interaction-operand id="51" constraint="else">      
+      <fragment refId="52"/>    
+    </interaction-operand>    
+    <combined-fragment id="50" interaction-operator="ALT">      
+      <interaction-operand id="53" constraint="s.getPassword().equals(u.getPassword())">        
+        <fragment refId="24"/>        
+        <fragment refId="26"/>      
+      </interaction-operand>      
+      <interaction-operand id="54" constraint="else"/>    
+    </combined-fragment>    
+    <combined-fragment id="52" interaction-operator="OPT">      
+      <interaction-operand id="55" constraint="teacherServices.teacherIsExist(u.getUsername())">        
+        <fragment refId="30"/>        
+        <fragment refId="56"/>        
+        <fragment refId="32"/>        
+        <fragment refId="28"/>      
+      </interaction-operand>      
+      <combined-fragment id="56" interaction-operator="ALT">        
+        <interaction-operand id="57" constraint="teacher.getPassword().equals(u.getPassword())">          
+          <fragment refId="34"/>          
+          <fragment refId="36"/>        
+        </interaction-operand>        
+        <interaction-operand id="58" constraint="else"/>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" operation="Login():org.springframework.web.servlet.ModelAndView" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="User()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="12" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="VerifyLogin(com.main.model.User):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="ModelAndView()" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="Student()" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="findByUsername(java.lang.String):com.main.model.Student" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="getUsername():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="HomePage(java.lang.String):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="getUsername():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="Teacher()" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="findByUsername(java.lang.String):com.main.model.Teacher" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="getUsername():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="HomePage(java.lang.String):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="getUsername():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="addObject(java.lang.String,java.lang.Object):org.springframework.web.servlet.ModelAndView" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="40" operation="setViewName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="41"/>  
+  </message>
+</sequence-diagram>

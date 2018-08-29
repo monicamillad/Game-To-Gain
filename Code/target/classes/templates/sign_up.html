@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>SignUp | Game To Gain</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+	<link rel="stylesheet" href="../static/form.css" th:href="@{/form.css}" />
+		
+</head>
+<body id="top" >
+
+	<!-- ################################################################################################ -->
+	<div class="wrapper row0">
+		<div id="topbar" class="hoc clear">
+			<div class="fl_left">
+				<ul class="nospace inline pushright">
+					<li><i class="fa fa-user"></i> <a href="sign_up">SignUp</a></li>
+					<li><i class="fa fa-sign-in"></i> <a href="login">LogIn</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- ################################################################################################ -->		
+	<div class="wrapper row1">
+		<header id="header" class="hoc clear">
+			<div id="logo" class="fl_left">
+				<h1 style="color: #818183">
+					<a href="/">Game To Gain </a>
+				</h1>
+			</div>
+			</header>
+	</div>
+	<!-- ################################################################################################ -->
+		
+	
+	<div class="wrapper bgded overlay" th:style="'background:url(' + @{back.png} + ');'" >
+		<div id="pageintro" class="hoc clear" >
+			<div class="form">
+					<h1 >Sign Up</h1>
+
+					<div id="signup">
+						<form action="verify" method="post">
+							<div class="top-row">
+								<div class="field-wrap">
+									<label> Your Name<span class="req">*</span>
+									</label> <input type="text" th:field="${user.name}" required="required"/>
+								</div>
+								<div class="field-wrap">
+									<label> User Name<span class="req">*</span>
+									</label> <input type="text" th:field="${user.username}" required="required"/> 
+									 
+								</div>
+							</div>
+
+
+							<div class="field-wrap">
+								<label> Email Address<span class="req">*</span>
+								</label> <input type="email" th:field="${user.email}" required="required"/>
+							</div>
+							<div class="top-row">
+								<div class="field-wrap">
+									<label> Password<span class="req">*</span>
+									</label> <input type="password" th:field="${user.password}" required="required" pattern=".{8,}"/>
+								</div>
+								<div class="field-wrap">
+									<label> Confirm Password<span class="req">*</span>
+									</label> <input type="password" th:field="${user.cpassword}" required="required" pattern=".{8,}"/>
+								</div>
+							</div>
+
+							<div class="top-row">
+								<div class="field-wrap">
+									<input type="date" th:field="${user.dateOfBirth}" style="color: rgba(255, 255, 255, 0.5); left: 10px; font-size: 1.2rem;" required="required" />
+								</div>
+								<div class="field-wrap">
+									<label>Mobile Number</label> <input type="text" th:field="${user.phoneNumber}" pattern="[0-9]{11}"/>
+								</div>
+							</div>
+							
+							<div class="top-row">
+
+								<div class="field-wrap">
+								
+									<select th:field="${user.type}" style="color: rgba(255, 255, 255, 0.5); left: 10px; font-size:20px; background-color:transparent; width:100%; height: 38px;">				
+										<option th:value="teacher" style="color:black">Teacher</option>			
+										<option th:value="student" style="color:black">Student</option>			
+									</select>
+								</div>
+								<div class="field-wrap">
+								
+									<select th:field="${user.gender}" style="color: rgba(255, 255, 255, 0.5); left: 10px; font-size:20px; background-color:transparent; width:100%; height: 38px;">
+										<option th:value="male" style="color:black">Male</option>			
+										<option th:value="female" style="color:black">Female</option>			
+									</select>
+								</div>
+							</div>
+							
+							
+							<p th:text ="${user.error}" style="color: rgba(255, 0, 0, 0.5)"/>
+							
+							<button type="submit" class="button button-block" id="submit1">Get Started</button>
+
+						</form>
+
+					</div>
+
+				<!-- tab-content -->
+
+			</div>
+			<!-- ################################################################################################ -->
+		</div>
+	</div>
+	<div class="wrapper row5">
+		<div id="copyright" class="hoc clear">
+			<!-- ################################################################################################ -->
+			<p class="fl_left">&copy; 2017 - Game To Gain</p>
+			<!-- ################################################################################################ -->
+		</div>
+	</div>
+	<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type="text/javascript" src="../static/form.js" th:src="@{/form.js}"></script>
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+	
+</body>
+</html>

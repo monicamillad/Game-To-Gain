@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Game To Gain</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	
+	
+	<link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}" />
+	
+</head>
+<body id="top">
+
+    <!-- ################################################################################################ -->
+	<div class="wrapper row0">
+		<div id="topbar" class="hoc clear"> 
+			<div class="fl_left">
+				<ul class="nospace inline pushright">
+					<li><i class="fa fa-user"></i> <a href="sign_up">SignUp</a></li>
+					<li><i class="fa fa-sign-in"></i> <a href="login">LogIn</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- ################################################################################################ -->
+ 
+
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="/">Game To Gain</a></h1>
+    </div>
+  </header>
+</div>
+<div class="wrapper bgded overlay" th:style="'background:url(' + @{back.png} + ')no-repeat fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;'">
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h2 class="heading center">Play and Learn</h2>
+      <p>play educational games and gain more experience in many available courses </p>
+      <footer><a class="btn" href="sign_up">Sign Up</a></footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<div class="wrapper row3">
+  <div id="introblocks" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace clear">
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'Mathematics'}" ><i class="clg clg-planet-earth5"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'Mathematics'}">Mathematics</a></h4>
+          <p>Justo hendrerit suspendisse non justo tempor porttitor urna ac fringilla orci&hellip;</p>
+        </article>
+      </li>
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'History'}"><i class="clg clg-monument26"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'History'}">History</a></h4>
+          <p>Interdum sit elementum at amet diam sed non convallis vitae nec habitant&hellip;</p>
+        </article>
+      </li>
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'Science'}"><i class="clg clg-microscopes2"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'Science'}">Science</a></h4>
+          <p>Commodo quis maecenas in enim ac elit tempor vehicula pellentesque a libero&hellip;</p>
+        </article>
+      </li>
+      <li>
+        <article><a th:href="@{'/category/'+${un}+'/'+'Programming'}"><i class="clg clg-university23"></i></a>
+          <h4 class="heading underline center"><a th:href="@{'/category/'+${un}+'/'+'Programming'}">Programming</a></h4>
+          <p>Rhoncus iaculis ligula vel lobortis nullam malesuada mi odio vitae consequat&hellip;</p>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+	
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">&copy; 2017 - Game To Gain</p>
+	<!-- ################################################################################################ -->
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+	<script type="text/javascript" src="../static/jquery.backtotop.js" th:src="@{/jquery.backtotop.js}"></script>
+	<script type="text/javascript" src="../static/jquery.mobilemenu.js" th:src="@{/jquery.mobilemenu.js}"></script>
+	<script type="text/javascript" src="../static/jquery-ui.min.js" th:src="@{/jquery-ui.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.min.js" th:src="@{/jquery.min.js}"></script>
+	<script type="text/javascript" src="../static/jquery.placeholder.min.js" th:src="@{/jquery.placeholder.min.js}"></script>
+	
+	
+</body>
+</html>
